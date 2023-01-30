@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './Components/Navbar';
+import Hero from './Components/Hero';
 
-function App() {
+export default function App() {
+  const Numbers = [
+    { id: 1, Name: 'punit sharma', mobno: '123 456 7898', address: 'idontknow@gmail.com' },
+    { id: 2, Name: 'rohan kumar', mobno: '133 416 7438', address: 'evenIDontKnow@gmail.com' },
+    { id: 3, Name: 'sohan rana', mobno: '198 138 9236', address: 'iDontCare@gmail.com' },
+    { id: 4, Name: 'mohan mishra', mobno: '156 245 7289', address: 'whateverItIs@gmail.com' },
+  ]
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <div className='flex gap-5 flex-row col-span-2 justify-center'>
+        {/* <Hero/> */}
+        {Numbers.map(profiles => <div key={profiles.id} ><Hero everything={profiles} key={profiles.id} /></div>)}
+      </div>
     </div>
-  );
+  )
 }
-
-export default App;

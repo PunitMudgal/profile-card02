@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* 
+.navbar{
+    height: 10vh;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+}
+
+.navbar-logo{
+    font:x-large;
+    color: crimson;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 4vw;
+} */
+
+.card {
+    background-color: whitesmoke;
+    /* margin: 5ch; */
+    height: 350px;
+    width: 260px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+}
+
+.small-card {
+    margin: 1.4rem;
+    /* padding: 1.4rem; */
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 1rem;
+    
+}
+
+.name {
+    font-size: larger;
+    font-weight: 700;
+    margin: 10px auto;
+    
+
+}
+
+.image {
+    border-radius: 7px;
+}
+
+.mobile-number {
+    padding-top: 1px;
+}
+
+.address {
+    color: dimgrey;
+}
